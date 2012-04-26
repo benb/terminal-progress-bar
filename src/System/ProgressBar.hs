@@ -17,7 +17,11 @@ import "base" Data.Function ( ($) )
 import "base" Data.List     ( null, length, genericLength, genericReplicate )
 import "base" Data.Ord      ( min, max )
 import "base" Data.Ratio    ( (%) )
+#if MIN_VERSION_base(4,5,0)
 import "base" Data.String   ( String )
+#else
+import "base" Data.Char   ( String )
+#endif
 import "base" Prelude       ( (+), (-), round, floor )
 import "base" System.IO     ( IO, putStr, putChar )
 import "base" Text.Printf   ( printf )

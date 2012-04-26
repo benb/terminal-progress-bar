@@ -45,6 +45,7 @@ library
                  , base-unicode-symbols >= 0.2.2.3 && < 0.3
     exposed-modules: System.ProgressBar
     ghc-options: -Wall
+    extensions: CPP
 
 test-suite test-terminal-progress-bar
   type: exitcode-stdio-1.0
